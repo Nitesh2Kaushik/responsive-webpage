@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#div1{
+    
+}
+*{
+    background-color: limegreen;
+    
+}
+#p1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color:black;
+    font-size: 55px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    font-size: 30px;
+    color: antiquewhite;
+}
+#id2{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+#id3{
+    display: flex;
+    justify-content: space-around;
+}
+#hp:hover{
+    cursor: pointer;
+    
+}
+#msgus:hover{
+    cursor: pointer;
+    
+}
+</style>
+<body>
+    <div id="div1">
+<p id="p1">Get  in Touch</p>
+<hr>
+    </div>
+    <nav><p>Address:</p>
+    <p>Phone:</p>
+    <p>Email:</p>
+</nav>
+<div id="id2">
+    <pre>
+        Invertis University, Bareilly,
+        State: Uttar Pradesh,
+        Country:India,
+        Pin Code:1234556
+    </pre>
+    <pre>
+        Contact Number:
+        1234567890
+    </pre>
+    <pre>
+        Email- Id: You can Email Us 
+        On:nitesh2kaushik@gmail.com
+    </pre>
+    
+</div>
+<div id="id3">
+    <h1 id="hp">Home Page</h1>
+    <h1 id="msgus">Message Us</h1>
+</div>
+<footer>All copyrightes are recieved @2023</footer>
+<script>
+    document.querySelector('#msgus').addEventListener('click',()=>{
+        window.location.href='form.html';
+    });
+    document.querySelector('#hp').addEventListener('click',()=>{
+        window.location.href='index.html';
+    });
+    </script>
+</body>
+</html>

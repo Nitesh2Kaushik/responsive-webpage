@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color:purple;
+        }
+        #id1{
+            margin-left: 560px;
+            margin-top: 100px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        #hp:hover{
+            cursor: pointer;
+        }
+        #cu:hover{
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="id1">
+   <h1>Message Us:</h1>
+    <br><br>
+    
+    <form id="form1" style="color: wheat; font-size: 25px;">
+        <label for="name">User Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <br><br>
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" placeholder="Enter Your Email Id">
+        <br><br>
+        <label for="mob">User Name:</label>
+        <input type="tel" id="mob" placeholder="Enter Your contect number">
+        <br><br>
+        <label for="address">Address:</label>
+        <textarea id="address"></textarea>
+        <br><br>
+        <label for="msg">Write Your Message:</label>
+        <textarea id="msg"></textarea>
+        <br>
+        <br>
+        <br>
+        <button style="color: aliceblue; font-size: 25px;">Submit</button>
+    </form>
+    <nav>
+        <h2 id="hp">Home Page:</h2>
+        <h2 id="cu">Contect Us:</h2>
+    </nav>
+    </div>
+    <script>
+        document.querySelector('#hp').addEventListener('click',()=>{
+            window.location.href='index.html';
+        });
+        document.querySelector('#cu').addEventListener('click',()=>{
+            window.location.href='contactus.html';
+        });
+        </script>
+</body>
+</html>
